@@ -4,6 +4,7 @@ import { addIcons } from 'ionicons';
 import { triangle, ellipse, square, home, search, radio, ban  } from 'ionicons/icons';
 
 
+
 @Component({
   selector: 'app-tabs',
   templateUrl: 'tabs.page.html',
