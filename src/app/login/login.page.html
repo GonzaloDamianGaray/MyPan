@@ -1,5 +1,15 @@
 <div class="contenedor-login">
-  <ion-button class="boton-login" color="dark" (click)="navigateToLogin()">
+  <div class="Formulario">
+    <img class="giftpan" src="https://imagenes.muyinteresante.com.mx/uploads/2023/05/31/647792c378adc.gif">
+    <p>¡Bienvenido, para ingresar inicia sesión! 😋</p>
+    <ion-input  label="Email:"  fill="outline" placeholder="Ingrese su email"></ion-input>
+    <br>
+    <ion-input type="password" label="Contraseña:" fill="outline" placeholder="Ingrese su Contraseña">
+      <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+    </ion-input>
+  </div>
+  <br>
+  <ion-button class="boton-login" color="dark" (click)="navigateToLogin(); Toast('top')" >
     Ingresar
   </ion-button>
   <p class="mensaje-registro">
