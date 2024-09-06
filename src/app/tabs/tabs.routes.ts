@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
-import { RegistrarPage } from '../registrar/registrar.page';
 
 export const routes: Routes = [
   {
@@ -9,7 +8,7 @@ export const routes: Routes = [
     children: [
       {
         path: 'tab1',
-        loadComponent: () => import('../inicio/inicio.page').then(m => m.InicioPage),
+        loadComponent: () => import('../home/home.page').then(m => m.HomePage),
       },
       {
         path: 'tab2',

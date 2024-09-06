@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
+    margin: 0; 
+  }
+  
+  .fondo {
+    display: flex;
+    flex-direction: column; /* Permite que el fondo se ajuste al contenido verticalmente */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #0055e8;
+    border-radius: 20px;
+    max-width: 100%; /* Asegura que el fondo no exceda el contenedor */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del fondo */
+  }
+  
+  .texto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    font-size: 17px
+    
+  }
+  

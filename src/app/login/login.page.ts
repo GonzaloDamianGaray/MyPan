@@ -25,8 +25,9 @@ export class LoginPage implements OnInit {
   async Toast(position: 'top') {
     const toast = await this.toastController.create({
       message: '¡Bienvenido!',
-      duration: 2000,
+      duration: 1000,
       position: position,
+      color: "success",
     });
     await toast.present();
   }

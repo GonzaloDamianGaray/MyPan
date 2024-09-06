@@ -9,9 +9,25 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Perfil</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Pagina 3"></app-explore-container>
+  <div class="container">
+    <div class="fondo">
+      <div class="perfil">
+          <ion-avatar>
+            <img alt="Imagen de perfil defecto" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+          </ion-avatar>
+      </div>
+      <div class="texto">
+        <ion-label>Nombre: Gonzalo Garay</ion-label>
+        <ion-label>Edad: 21 años</ion-label>
+        <ion-label>Pais: Argentina</ion-label>
+        <ion-label>Panadero: Novato</ion-label>
+      </div>
+        <ion-button size="small">
+          <ion-icon name="pencil" alt="editar"></ion-icon>
+        </ion-button>
+    </div>
+    </div>
 </ion-content>

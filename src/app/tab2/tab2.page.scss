@@ -1,0 +1,34 @@
+.nosotros {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; 
+}
+
+.textonos {
+    font-size: 2vw; 
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .textonos {
+        font-size: 5vw; 
+    }
+}
+
+@media (max-width: 400px) {
+    .textonos {
+        font-size: 6vw; 
+    }
+}
