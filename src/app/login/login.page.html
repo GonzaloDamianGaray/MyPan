@@ -2,16 +2,21 @@
   <div class="Formulario">
     <img class="giftpan" src="https://imagenes.muyinteresante.com.mx/uploads/2023/05/31/647792c378adc.gif">
     <p>¡Bienvenido, para ingresar inicia sesión! 😋</p>
-    <ion-input  label="Email:"  fill="outline" placeholder="Ingrese su email"></ion-input>
+
+    <form [formGroup]="FormNuevo" (ngSubmit)="OnSubmit()">
+    <ion-input formControlName="nombre" label="Email:"  fill="outline" placeholder="Ingrese su email"></ion-input>
     <br>
-    <ion-input type="password" label="Contraseña:" fill="outline" placeholder="Ingrese su Contraseña">
+    <ion-input formControlName="contraseña" type="password" label="Contraseña:" fill="outline" placeholder="Ingrese su Contraseña">
       <ion-input-password-toggle slot="end"></ion-input-password-toggle>
     </ion-input>
-  </div>
+ 
   <br>
-  <ion-button class="boton-login" color="dark" (click)="navigateToLogin(); Toast('top')" >
-    Ingresar
+  </form>
+  </div>
+  <ion-button type="ngSubmit" class="boton-login" color="dark" (click)="Loguear()" >
+    Ingresar 
   </ion-button>
+
   <p class="mensaje-registro">
     ¿Aún no tienes una cuenta? Regístrate
     <a [routerLink]="['/registrar']">Aquí</a>
