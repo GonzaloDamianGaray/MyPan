@@ -3,10 +3,25 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
-    <ion-title>registrar</ion-title>
+    <ion-title>Registrar nuevo usuario</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <p>hola xd</p>
+  <p>¡Rellena los campos para crear tu usuario! 🥰</p>
+  <div class="contenedor-registro">
+    <div class="contenedor-inputs">
+      <form [formGroup]="FormRegister" (ngSubmit)="Registrar()"> 
+      <ion-input formControlName="email" label="Nuevo email:" fill="outline" placeholder="Ingrese email"></ion-input>
+      <br />
+      <ion-input formControlName="nombre" label="Nuevo usuario:" fill="outline" placeholder="Ingrese usuario"></ion-input>
+      <br/>
+      <ion-input formControlName="contraseña" label="Nueva contraseña:" fill="outline" placeholder="ingrese contraseña"> <ion-input-password-toggle slot="end"></ion-input-password-toggle></ion-input>
+    </form>
+    <div class="boton">
+      <ion-button type="ngSubmit" color="dark" (click)="Registrar()">Registrar</ion-button>
+    </div>
+  </div>
+  
+</div>
 </ion-content>

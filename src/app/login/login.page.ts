@@ -29,7 +29,7 @@ export class LoginPage implements OnInit {
     
   ) {
     
-    // this.FormNuevo.setValue({nombre: 'hola', contraseña: 'xd'});
+    // this.FormNuevo.setValue({nombre: 'prueba', contraseña: 'xd'});
     // this.FormNuevo.patchValue({nombre:'hola'})
 
    }
@@ -68,7 +68,6 @@ export class LoginPage implements OnInit {
   }
 
   navigateToRegistrar() {
-    console.log('Navigating to /registrar/registrar');
     this.router.navigate(['/registrar/registrar']);
   }
   
@@ -82,8 +81,6 @@ export class LoginPage implements OnInit {
     } else{
       this.ToastErrorIngreso("bottom")
     }
-
-
 
   }
 
