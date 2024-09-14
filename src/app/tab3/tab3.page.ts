@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonAvatar, IonLabel, IonChip , IonBackButton, IonButton, IonButtons, IonIcon } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonAvatar, IonLabel, IonChip , IonBackButton, IonButton, IonButtons, IonIcon, IonInputPasswordToggle } from '@ionic/angular/standalone';
 import { ExploreContainerComponent } from '../explore-container/explore-container.component';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
@@ -12,7 +12,7 @@ import { ToastController } from '@ionic/angular';
   templateUrl: 'tab3.page.html',
   styleUrls: ['tab3.page.scss'],
   standalone: true,
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent, IonAvatar, IonLabel, IonChip, IonButton, IonIcon , IonBackButton, IonButtons],
+  imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent, IonAvatar, IonLabel, IonChip, IonButton, IonIcon , IonBackButton, IonButtons, IonInputPasswordToggle],
 })
 export class Tab3Page {
   constructor(

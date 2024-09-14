@@ -15,4 +15,23 @@
       <ion-title size="large">editar</ion-title>
     </ion-toolbar>
   </ion-header>
+  <div class="contenedor-registro"></div>
+    <div class="contenedor-inputs">
+
+      <p>¡Rellena los campos para editar tus datos! 🤓</p>
+      <!-- <form [formGroup]="FormRegister" (ngSubmit)="Registrar()">  -->
+      <ion-input formControlName="email" label="Nuevo Nombre:" fill="outline" placeholder="Ingrese nuevo nombre"></ion-input>
+      <br />
+      <ion-input formControlName="nombre" label="Nueva edad:" fill="outline" placeholder="Ingrese nueva edad"></ion-input>
+      <br/>
+      <ion-input formControlName="contraseña" label="Nueva pais:" fill="outline" placeholder="ingrese nuevo pais"> </ion-input>
+    <!-- </form> -->
+    <div class="boton">
+      <ion-button type="ngSubmit" color="dark" >Editar</ion-button>
+    </div>
+  </div>
+
+
+
+
 </ion-content>
